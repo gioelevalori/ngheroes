@@ -1,0 +1,11 @@
+
+<h2>{{hero.name | uppercase}} Details</h2>
+<div>Id: {{hero.id}}</div>
+<label>Name:
+  <input fd-form-control type="text" id="input-message" placeholder="Field placeholder text" [state]="'information'" [(ngModel)]="hero.name" />
+</label>
+<br />
+<label>Power:
+  <input fd-form-control type="text" id="input-message" placeholder="Field placeholder text" [state]="'information'" [(ngModel)]="hero.power" />
+</label>
+<button (click)="goBack()">indietro</button>
